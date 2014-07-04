@@ -1,4 +1,5 @@
 " set spell spelllang=en_us
+set clipboard=unnamedplus
 
 set keymap=ukrainian-jcuken
 

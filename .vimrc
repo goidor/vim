@@ -180,8 +180,6 @@ Bundle 'kien/ctrlp.vim'
 " Bundle 'vim-scripts/project.vim'
 Bundle 'vim-scripts/taglist.vim'
 
-" Surround text
-Bundle 'tpope/vim-surround'
 " Faster navigation
 Bundle 'Lokaltog/vim-easymotion'
 " Sublime, Emacs-like refactoring
@@ -204,9 +202,9 @@ Bundle 'Conque-Shell'
 Bundle 'L9'
 
 " Utilities
-Bundle 'tsaleh/vim-matchit.git'
+Bundle 'tsalehvim-matchit.git'
 Bundle 'vim-scripts/tComment'
-" Bundle 'Raimondi/delimitMate'
+Bundle 'Raimondi/delimitMate'
 Bundle 'tpope/vim-surround'
 
 "Files manager
@@ -234,12 +232,12 @@ Bundle 'vim-scripts/django.vim'
 "  Bundle 'digitaltoad/vim-jade'
 Bundle 'wavded/vim-stylus'
 "  Bundle 'lukaszb/vim-web-indent'
-" Bundle 'mattn/zencoding-vim'
+Bundle 'mattn/zencoding-vim'
 Bundle 'godlygeek/tabular'
 "  Bundle 'jamescarr/snipmate-nodejs'
 Bundle 'lunaru/vim-less'
 "Bundle 'joestelmach/javaScriptLint.vim'
-"  Bundle 'pangloss/vim-javascript'
+Bundle 'pangloss/vim-javascript'
 
 " Syntax checking 
 " Bundle 'scrooloose/syntastic'
@@ -358,7 +356,7 @@ set background=dark
 let g:CSApprox_attr_map = { 'bold' : 'bold', 'italic' : '', 'sp' : '' }
 colorscheme mustang
 set nonu
-set gfn=Monospace\ 8.7 
+set gfn=Monospace\ 12 
 
 set encoding=utf8
 try

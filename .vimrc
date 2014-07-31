@@ -1,6 +1,9 @@
 " set spell spelllang=en_us
 set clipboard=unnamedplus
 
+ino <c-j> <c-r>=TriggerSnippet()<cr>
+snor <c-j> <esc>i<right><c-r>=TriggerSnippet()<cr>
+
 set keymap=ukrainian-jcuken
 
 " Default - latin layout
@@ -477,26 +480,26 @@ let jslint_command_options = '-conf ~/.vim/jsl.conf -nofilelisting -nocontext -n
 nnoremap <leader>c <CR>:cclose<CR>
 
 " Set autocomplete form 
-" set completeopt=menuone,longest,preview
+set completeopt=menuone,longest,preview
 
 " Enabling Django : https://github.com/robhudson/snipmate_for_django
-" autocmd FileType python set ft=python.django " For SnipMate
-" autocmd FileType html set ft=htmldjango.html " For SnipMate
+autocmd FileType python set ft=python.django " For SnipMate
+autocmd FileType html set ft=htmldjango.html " For SnipMate
 
 " Django Tips from https://bitbucket.org/sjl/dotfiles/src/tip/vim/.vimrc
-" au BufNewFile,BufRead urls.py      setlocal nowrap
-" au BufNewFile,BufRead urls.py      normal! zR
-" au BufNewFile,BufRead dashboard.py normal! zR
+au BufNewFile,BufRead urls.py      setlocal nowrap
+au BufNewFile,BufRead urls.py      normal! zR
+au BufNewFile,BufRead dashboard.py normal! zR
 
-" au BufNewFile,BufRead admin.py     setlocal filetype=python.django
-" au BufNewFile,BufRead urls.py      setlocal filetype=python.django
-" au BufNewFile,BufRead models.py    setlocal filetype=python.django
-" au BufNewFile,BufRead views.py     setlocal filetype=python.django
-" au BufNewFile,BufRead settings.py  setlocal filetype=python.django
-" au BufNewFile,BufRead settings.py  setlocal foldmethod=marker
-" au BufNewFile,BufRead forms.py     setlocal filetype=python.django
-" au BufNewFile,BufRead common_settings.py  setlocal filetype=python.django
-" au BufNewFile,BufRead common_settings.py  setlocal foldmethod=marker
+au BufNewFile,BufRead admin.py     setlocal filetype=python.django
+au BufNewFile,BufRead urls.py      setlocal filetype=python.django
+au BufNewFile,BufRead models.py    setlocal filetype=python.django
+au BufNewFile,BufRead views.py     setlocal filetype=python.django
+au BufNewFile,BufRead settings.py  setlocal filetype=python.django
+au BufNewFile,BufRead settings.py  setlocal foldmethod=marker
+au BufNewFile,BufRead forms.py     setlocal filetype=python.django
+au BufNewFile,BufRead common_settings.py  setlocal filetype=python.django
+au BufNewFile,BufRead common_settings.py  setlocal foldmethod=marker
 
 " 
 " Django Surround https://code.djangoproject.com/wiki/UsingVimWithDjango

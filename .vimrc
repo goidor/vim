@@ -1,6 +1,10 @@
 " set spell spelllang=en_us
 set clipboard=unnamedplus
 
+" Verificar las pep8 en archivo Python
+let g:flake8_max_line_length=100 " Limite de caracteres por linea en 100
+autocmd BufWritePost *.py call Flake8() " Ejecutar automaticamente flake8
+
 ino <c-j> <c-r>=TriggerSnippet()<cr>
 snor <c-j> <esc>i<right><c-r>=TriggerSnippet()<cr>
 
@@ -227,7 +231,8 @@ Bundle "Shougo/neocomplcache"
 
 " Python development
 Bundle 'vim-scripts/Pydiction'
-Bundle 'kevinw/pyflakes-vim'
+" Bundle 'kevinw/pyflakes-vim'
+Bundle 'nvie/vim-flake8'
 Bundle 'vim-scripts/django.vim'
 
 "  "Javascript "
@@ -563,7 +568,7 @@ autocmd Syntax c,cpp,vim,xml,html,xhtml,perl normal zR
 nmap <F8> :TagbarToggle<CR>
 
 " Opens tree view
-nmap <F7> :NERDTree .<CR>
+nmap <F9> :NERDTree .<CR>
 
 
 " TagBar Configuration
